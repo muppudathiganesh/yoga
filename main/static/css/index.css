@@ -1,5 +1,6 @@
 
 
+
 .hero-card{position:relative;background:#000}
 .hero-img{height:260px;object-fit:cover}
 @media(min-width:992px){.hero-img{height:360px}}
@@ -53,6 +54,44 @@
 .text-black .fw-normal{font-weight:400}
 
 
+.services-section {
+    background: #fceef2;
+  }
+  .text-purple {
+    color: #8a2c79;
+  }
+  .service-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    height: 100%;
+  }
+  .service-card .card-img-top.placeholder {
+    background: #fff;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #bbb;
+  }
+  .service-card.active {
+    background: #7c5cbf;
+    color: #fff;
+  }
+  .service-card.active a {
+    color: #fff !important;
+  }
+  .read-more {
+    display: inline-block;
+    margin-top: 5px;
+    color: #8a2c79;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .read-more:hover {
+    text-decoration: underline;
+  }
 
 .gradient-band{background:linear-gradient(180deg,#d8f8ff,#e7ffd8)}
 .testimonial{max-width:680px;border-radius:18px;background:#fff}

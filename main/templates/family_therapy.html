@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/family.css' %}">
+{% endblock %}
 {% block title %}Family Therapy – DEE PLUS{% endblock %}
 
 {% block content %}
@@ -19,7 +21,7 @@
                     <img src="{% static 'images/f1.jpg' %}" class="card-img-top rounded-top" alt="family" style="width: 546px;height: 350px;">
                     <div class="card-body text-center">
                         <h6 class="card-title text-purple">Understanding ‘Family Of Origin‘ Work in Therapy</h6>
-                        <a href="#" class="btn btn-purple mt-2">I Get This</a>
+                        <a href="{% url 'approach' %}" class="btn btn-purple mt-2">I Get This</a>
                         <p class="mt-2 small">Medically reviewed By Rotary - LCP</p>
                     </div>
                 </div>
@@ -30,7 +32,7 @@
                     <img src="{% static 'images/f2.jpg' %}" class="card-img-top rounded-top" alt="family" style="width: 546px;height: 350px;">
                     <div class="card-body text-center">
                         <h6 class="card-title text-purple">How Structural Family Therapy Works</h6>
-                        <a href="#" class="btn btn-purple mt-2">I Get This</a>
+                        <a href="{% url 'approach' %}" class="btn btn-purple mt-2">I Get This</a>
                         <p class="mt-2 small">Medically reviewed By Carno - MD</p>
                     </div>
                 </div>
@@ -40,7 +42,7 @@
                     <img src="{% static 'images/stress.jpg' %}" class="card-img-top rounded-top" alt="family" style="width: 546px;height: 350px;">
                     <div class="card-body text-center">
                         <h6 class="card-title text-purple">How Structural Family Therapy Works</h6>
-                        <a href="#" class="btn btn-purple mt-2">I Get This</a>
+                        <a href="{% url 'approach' %}" class="btn btn-purple mt-2">I Get This</a>
                         <p class="mt-2 small">Medically reviewed By Carno - MD</p>
                     </div>
                 </div>
@@ -50,7 +52,7 @@
                     <img src="{% static 'images/f4.jpg' %}" class="card-img-top rounded-top" alt="family" style="width: 546px;height: 350px;">
                     <div class="card-body text-center">
                         <h6 class="card-title text-purple">How Structural Family Therapy Works</h6>
-                        <a href="#" class="btn btn-purple mt-2">I Get This</a>
+                        <a href="{% url 'approach' %}" class="btn btn-purple mt-2">I Get This</a>
                         <p class="mt-2 small">Medically reviewed By Carno - MD</p>
                     </div>
                 </div>
@@ -60,7 +62,7 @@
                     <img src="{% static 'images/filial-therapy.jpg' %}" class="card-img-top rounded-top" alt="family" style="width: 546px;height: 350px;">
                     <div class="card-body text-center">
                         <h6 class="card-title text-purple">How Structural Family Therapy Works</h6>
-                        <a href="#" class="btn btn-purple mt-2">I Get This</a>
+                        <a href="{% url 'approach' %}" class="btn btn-purple mt-2">I Get This</a>
                         <p class="mt-2 small">Medically reviewed By Carno - MD</p>
                     </div>
                 </div>
@@ -70,7 +72,7 @@
                     <img src="{% static 'images/f6.jpg' %}" class="card-img-top rounded-top" alt="family" style="width: 546px;height: 350px;">
                     <div class="card-body text-center">
                         <h6 class="card-title text-purple">How Structural Family Therapy Works</h6>
-                        <a href="#" class="btn btn-purple mt-2">I Get This</a>
+                        <a href="{% url 'approach' %}" class="btn btn-purple mt-2">I Get This</a>
                         <p class="mt-2 small">Medically reviewed By Carno - MD</p>
                     </div>
                 </div>

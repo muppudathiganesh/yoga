@@ -15,7 +15,7 @@
       <div class="col-6 col-md-3">
         <h6 class="fw-bold">Navigation</h6>
         <ul class="list-unstyled small mt-3">
-          <li><a href="{% url 'home' %}" class="footer-link text-white text-decoration-none">Home</a></li>
+          <li><a href="{% url 'index' %}" class="footer-link text-white text-decoration-none">Home</a></li>
           <li><a href="{% url 'happiness' %}" class="footer-link text-white text-decoration-none">Happiness Week</a></li>
           <li><a href="{% url 'about' %}" class="footer-link text-white text-decoration-none">About Us</a></li>
           <li><a href="{% url 'contact' %}" class="footer-link text-white text-decoration-none">Contact Us</a></li>
@@ -50,3 +50,10 @@
     </div>
   </div>
 </footer>
+
+<style>
+  .custom-footer{background:var(--purple);border-radius:20px 20px 0 0}
+.footer-link{color:#fff;text-decoration:none}
+.footer-link:hover{opacity:.85}
+.footer-logo{height:56px;width:56px;border-radius:50%}
+</style>

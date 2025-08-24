@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
 {% block content %}
 
 <!-- Hero -->
@@ -101,12 +104,13 @@
 <!-- Services Section -->
 <section class="py-3 services-section">
   <div class="container text-center">
-    <h2 class="fw-bold mb-4 text-purple">Our Sevices</h2>
+    <h2 class="fw-bold mb-4 text-purple">Our Services</h2>
     <div class="row g-3">
+      
       <!-- Card 1 -->
       <div class="col-6 col-md-4">
         <div class="card service-card">
-          <img src="{% static 'images/twopeople.jpg' %}" class="card-img-top" alt="Individual Therapy">
+          <img src="{% static 'images/services-1.jpg' %}" class="card-img-top" alt="Individual Therapy">
           <div class="card-body">
             <h5 class="card-title">Individual Therapy</h5>
             <a href="#" class="read-more">Read more</a>
@@ -114,10 +118,10 @@
         </div>
       </div>
 
-      <!-- Card 2 -->
+      <!-- Card 2 (Active Highlight) -->
       <div class="col-6 col-md-4">
         <div class="card service-card active">
-          <img src="{% static 'images/services-1.jpg' %}" class="card-img-top" alt="Couples Therapy">
+          <img src="{% static 'images/couple_therapy.jpeg' %}" class="card-img-top" alt="Couples Therapy">
           <div class="card-body">
             <h5 class="card-title">Couples Therapy</h5>
             <a href="#" class="read-more">Read more</a>
@@ -128,7 +132,7 @@
       <!-- Card 3 -->
       <div class="col-6 col-md-4">
         <div class="card service-card">
-          <img src="{% static 'images/twopeople.jpg' %}" class="card-img-top" alt="Group Therapy">
+          <img src="{% static 'images/filial-therapy.jpg' %}" class="card-img-top" alt="Group Therapy">
           <div class="card-body">
             <h5 class="card-title">Group Therapy</h5>
             <a href="#" class="read-more">Read more</a>
@@ -150,7 +154,7 @@
       <!-- Card 5 -->
       <div class="col-6 col-md-4">
         <div class="card service-card">
-          <img src="{% static 'images/grouppeople.jpg' %}" class="card-img-top" alt="Group Session">
+          <img src="{% static 'images/group.jpg' %}" class="card-img-top" alt="Group Session">
           <div class="card-body">
             <h5 class="card-title">Group Session</h5>
             <a href="#" class="read-more">Read more</a>
@@ -168,10 +172,10 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
-
 
 <!-- Testimonials Section -->
 <section class="py-5 testimonials-section">

@@ -10,20 +10,21 @@
     <div class="collapse navbar-collapse justify-content-center" id="mainNav">
       <ul class="navbar-nav gap-lg-3">
 <li class="nav-item">
-    <a class="nav-link" href="{% url 'home' %}">Home</a>
+  <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'index' %}">Home</a>
 </li>        
 <li class="nav-item">
-    <a class="nav-link" href="{% url 'about' %}">About Us</a>
+  <a class="nav-link {% if request.path == '/about/' %}active{% endif %}" href="{% url 'about' %}">About Us</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="{% url 'therapy' %}">Theraphy</a>
+  <a class="nav-link {% if request.path == '/therapy/' %}active{% endif %}" href="{% url 'therapy' %}">Therapy</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="{% url 'meditation' %}">Meditation</a>
+  <a class="nav-link {% if request.path == '/meditation/' %}active{% endif %}" href="{% url 'meditation' %}">Meditation</a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
-</li>      
+  <a class="nav-link {% if request.path == '/contact/' %}active{% endif %}" href="{% url 'contact' %}">Contact Us</a>
+</li>
+     
 </ul>
     </div>
     <div class="d-none d-lg-flex align-items-center">
@@ -32,3 +33,34 @@
     </div>
   </div>
 </nav>
+<style>
+  :root{
+  --purple:#B285C0;
+  --soft-green:#E8FAD9;
+  --soft-green-2:#E3FFD5;
+}
+*{box-sizing:border-box}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FAE9F2; /* light pink background */
+}
+
+
+.custom-nav{
+  background:var(--purple);
+  border-radius:20px;
+  width:96%;
+  margin-left:auto;margin-right:auto;
+}
+
+.nav-link{color:#fff!important;font-weight:500}
+.nav-link:hover{opacity:.9}
+.nav-icon{color:#fff;font-size:1.15rem}
+.logo-img{height:34px;width:auto}
+.nav-link.active {
+    color: darkmagenta !important; /* makes the active link purple */
+}
+.nav-link.active:hover {
+    opacity: 0.8; /* slightly dim when hovering over active */
+}
+</style>

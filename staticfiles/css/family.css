@@ -1,7 +1,9 @@
-:root {
-  --brand: #B285C0;
-  --brand-dark: #9a66b0;
-  --text-dark: #5a2c6b;
+/* Import Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FAE9F2; /* light pink background */
 }
 
 /* Headings + Subtext */

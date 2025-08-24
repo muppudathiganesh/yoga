@@ -1,5 +1,3 @@
-from django.shortcuts import render
-
 import math
 from django.shortcuts import render
 
@@ -50,9 +48,13 @@ def index(request):
 )
 
 
-
+def home(request):
+    return render(request, "home.html")
 
 def therapy(request):
+    return render(request, "therapy.html")
+
+def family_therapy(request):
     return render(request, "family_therapy.html")
 
 def about(request):
