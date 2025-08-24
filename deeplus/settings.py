@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-z$@gnui8pg3-7-=gqn27r*_ytsf8lw6=$wybj3&y=rn_h2hcz4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["meditation-website-lbfz.onrender.com", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ['*']
 
 
 
