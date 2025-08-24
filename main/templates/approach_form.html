@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block content %}
+<div class="container py-5 d-flex justify-content-center">
+    <div class="form-card-wrapper p-4 shadow-lg rounded">
+        <h4 class="text-center text-purple fw-bold mb-3">
+            How to Mentally Prepare for Fatherhood, According to a Parenting Coach
+        </h4>
+        <h5 class="text-center fw-bold">Approach Form</h5>
+
+        <form method="post" class="mt-4 needs-validation" novalidate>
+            {% csrf_token %}
+
+            {% if form.non_field_errors %}
+                <div class="alert alert-danger">
+                    {{ form.non_field_errors }}
+                </div>
+            {% endif %}
+
+            <!-- First Name -->
+            <div class="mb-3">
+                {{ form.first_name.label_tag }}
+                {{ form.first_name|add_class:"form-control custom-input" }}
+                {% if form.first_name.errors %}
+                    <div class="invalid-feedback d-block">{{ form.first_name.errors|striptags }}</div>
+                {% endif %}
+            </div>
+
+            <!-- Last Name -->
+            <div class="mb-3">
+                {{ form.last_name.label_tag }}
+                {{ form.last_name|add_class:"form-control custom-input" }}
+                {% if form.last_name.errors %}
+                    <div class="invalid-feedback d-block">{{ form.last_name.errors|striptags }}</div>
+                {% endif %}
+            </div>
+
+            <!-- Mobile -->
+            <div class="mb-3">
+                {{ form.mobile_no.label_tag }}
+                {{ form.mobile_no|add_class:"form-control custom-input" }}
+                {% if form.mobile_no.errors %}
+                    <div class="invalid-feedback d-block">{{ form.mobile_no.errors|striptags }}</div>
+                {% endif %}
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+                {{ form.email.label_tag }}
+                {{ form.email|add_class:"form-control custom-input" }}
+                {% if form.email.errors %}
+                    <div class="invalid-feedback d-block">{{ form.email.errors|striptags }}</div>
+                {% endif %}
+            </div>
+
+            <!-- Therapy Days -->
+            <div class="mb-3">
+                {{ form.therapy_days.label_tag }}
+                {{ form.therapy_days|add_class:"form-select custom-input" }}
+                {% if form.therapy_days.errors %}
+                    <div class="invalid-feedback d-block">{{ form.therapy_days.errors|striptags }}</div>
+                {% endif %}
+            </div>
+
+            <!-- Family Count -->
+            <div class="mb-3">
+                {{ form.family_count.label_tag }}
+                {{ form.family_count|add_class:"form-control custom-input" }}
+                {% if form.family_count.errors %}
+                    <div class="invalid-feedback d-block">{{ form.family_count.errors|striptags }}</div>
+                {% endif %}
+            </div>
+
+            <!-- Address -->
+            <div class="mb-3">
+                {{ form.address.label_tag }}
+                {{ form.address|add_class:"form-control custom-input" }}
+                {% if form.address.errors %}
+                    <div class="invalid-feedback d-block">{{ form.address.errors|striptags }}</div>
+                {% endif %}
+            </div>
+
+            <!-- Time Availability -->
+            <div class="mb-3">
+                {{ form.time_availability.label_tag }}
+                {{ form.time_availability|add_class:"form-select custom-input" }}
+                {% if form.time_availability.errors %}
+                    <div class="invalid-feedback d-block">{{ form.time_availability.errors|striptags }}</div>
+                {% endif %}
+            </div>
+
+            <!-- Current City -->
+            <div class="mb-3">
+                {{ form.current_city.label_tag }}
+                {{ form.current_city|add_class:"form-control custom-input" }}
+                {% if form.current_city.errors %}
+                    <div class="invalid-feedback d-block">{{ form.current_city.errors|striptags }}</div>
+                {% endif %}
+            </div>
+
+            <div class="text-center mt-4">
+                <button type="submit" class="btn submit-btn px-5 py-2">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    /* Make the box smaller and centered */
+    .form-card-wrapper {
+        width: 100%;
+        max-width: 600px;  /* smaller width */
+        background: #f5ebff;  /* light purple box background */
+        border: 1px solid #d1b3ff;
+    }
+
+    /* Light purple input background */
+    .custom-input {
+        background-color: #f3e8ff !important;  /* light purple inputs */
+        border: 1px solid #d1b3ff;
+    }
+
+    .custom-input:focus {
+        background-color: #f0e1ff !important;
+        border-color: #a855f7;
+        box-shadow: 0 0 0 0.25rem rgba(168, 85, 247, 0.25);
+    }
+
+    .submit-btn {
+        background: #7e22ce;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .submit-btn:hover {
+        background: #6b21a8;
+    }
+</style>
+
+{% endblock %}
