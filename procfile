@@ -1,0 +1,2 @@
+web: gunicorn deeplus.wsgi:application
+

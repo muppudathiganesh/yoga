@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: deeplus
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn deeplus.wsgi:application"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: deeplus.settings
+      - key: PYTHON_VERSION
+        value: 3.11
