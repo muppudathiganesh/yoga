@@ -11,13 +11,14 @@
       <ul class="navbar-nav gap-lg-3">
 <li class="nav-item">
   <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'index' %}">Home</a>
-</li>        
+</li>    
+<li class="nav-item">
+  <a class="nav-link {% if request.path == '/therapy/' %}active{% endif %}" href="{% url 'therapy' %}">Therapy</a>
+</li>    
 <li class="nav-item">
   <a class="nav-link {% if request.path == '/about/' %}active{% endif %}" href="{% url 'about' %}">About Us</a>
 </li>
-<li class="nav-item">
-  <a class="nav-link {% if request.path == '/therapy/' %}active{% endif %}" href="{% url 'therapy' %}">Therapy</a>
-</li>
+
 <li class="nav-item">
   <a class="nav-link {% if request.path == '/meditation/' %}active{% endif %}" href="{% url 'meditation' %}">Meditation</a>
 </li>

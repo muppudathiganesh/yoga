@@ -8,7 +8,7 @@
 <!-- Hero -->
 <section class="container-xxl mt-3">
   <div class="hero-card rounded-3 overflow-hidden">
-    <img src="{% static 'images/hero-1.jpg' %}" alt="Meditation Hero" class="w-100 hero-img">
+    <img src="{% static 'images/hero-1.jpg' %}" alt="Meditation Hero" class="w-100 hero-img"  style="height:600px;">
     <a href="{% url 'payment' %}" class="btn btn-primary-cta position-absolute top-50 start-50 Left-100 px-4 py-2 rounded-pill">Join Now</a>
   </div>
 </section>
@@ -44,7 +44,7 @@
    
     <div class="col-lg-6">
       <div class="yoga-card text-center">
-        <img src="{% static 'images/meditation.jpg' %}" class="yoga-img" alt="Yoga">
+        <img src="{% static 'images/meditation.jpg' %}" class="yoga-img" alt="Yoga"  style="width:250px; height:500px; object-fit:cover;">
         <div class="mt-3">
           <h6 class="text-purple fw-bold">In Therapy Helps With</h6>
           <ul class="small list-unstyled mb-0">
@@ -120,7 +120,7 @@
 
       <!-- Card 2 (Active Highlight) -->
       <div class="col-6 col-md-4">
-        <div class="card service-card active">
+        <div class="card service-card ">
           <img src="{% static 'images/couple_therapy.jpeg' %}" class="card-img-top" alt="Couples Therapy">
           <div class="card-body">
             <h5 class="card-title">Couples Therapy</h5>
@@ -132,7 +132,7 @@
       <!-- Card 3 -->
       <div class="col-6 col-md-4">
         <div class="card service-card">
-          <img src="{% static 'images/filial-therapy.jpg' %}" class="card-img-top" alt="Group Therapy">
+          <img src="{% static 'images/group.jpg' %}" class="card-img-top" alt="Group Therapy">
           <div class="card-body">
             <h5 class="card-title">Group Therapy</h5>
             <a href="#" class="read-more">Read more</a>
@@ -229,12 +229,12 @@
       </div>
 
       <!-- Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+       <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon"></span>
-      </button>
+      </button> 
 
       <!-- Indicators -->
       <div class="carousel-indicators">
